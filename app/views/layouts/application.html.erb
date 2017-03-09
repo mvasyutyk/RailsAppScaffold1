@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ToyApp</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +8,19 @@
   </head>
 
   <body>
+    <nav class="navbar navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#">ToyApp</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/static_pages/home">Home</a></li>
+                    <li><a href="/static_pages/micropostsrt">Microposts Routes</a></li>
+                    <li><a href="/static_pages/usersrt">Users Routes</a></li>
+                </ul>
+            </div>
+        </nav>
+    
     <%= yield %>
   </body>
 </html>
